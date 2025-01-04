@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     
     <header className="fixed top-0 left-0 right-0 w-full bg-white md:bg-transparent">
-      <nav className="py-4 px-4 lg:px-12 ${sticky ? }">
+      <nav className="py-4 px-4 lg:px-12 ${sticky ? 'sticky top-0 left-0 right-0 bg-white shadow-md' : ''}">
         <div className="flex justify-between items-center text-base gap-8">
           <a
             href=""

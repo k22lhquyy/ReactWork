@@ -4,3 +4,6 @@
   font-family: 'Inter', sans-serif;
 }
 
+header {
+  z-index: 100001 !important;
+}
