@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './components/**/*.{html,js}',
-    './pages/**/*.{html,js}',
-    './index.html',
+    './src/**/*.{html,js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#05B6D3"
+      },
+      backgroundImage:{
+        'login-bg-img': "url('/src/assets/images/login-bg.jpg')",
+        'signup-bg-img': "url('/src/assets/images/signup-bg.jpg')",
+      }
+    },
   },
   plugins: [],
 }

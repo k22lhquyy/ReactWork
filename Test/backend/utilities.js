@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 
 function authenticateToken(req, res, next) {
     const authHeader = req.headers["authorization"];
+    console.log(authHeader);
     const token = authHeader && authHeader.split(" ")[1];
 
     // Không có token, trả về trạng thái 401 (Unauthorized)
