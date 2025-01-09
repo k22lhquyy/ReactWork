@@ -9,7 +9,7 @@ export default {
         primary: "#05B6D3"
       },
       backgroundImage:{
-        'login-bg-img': "url('/src/assets/images/login-bg.jpg')",
+        'login-bg-img': "url('/src/assets/images/login.jpg')",
         'signup-bg-img': "url('/src/assets/images/signup-bg.jpg')",
       }
     },
