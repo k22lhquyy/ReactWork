@@ -3,3 +3,27 @@
 @tailwind utilities;
 
 
+@layer base {
+    html {
+        font-family: "Popins", "sans-serif";
+    }
+
+    body {
+        background-color: #fdfeff;
+        overflow-x: hidden;
+    }
+}
+
+@layer components {
+    .input-box {
+        @apply w-full text-sm bg-cyan-600/5 rounded px-5 py-3 mb-4 outline-none;
+    }
+
+    .btn-primary {
+        @apply w-full text-sm bg-cyan-500 rounded shadow-lg shadow-cyan-200/50 p-[10px] rounded-full text-white font-medium my-1 hover:bg-cyan-100 hover:text-cyan-500;
+    }
+
+    .btn-light {
+        @apply bg-cyan-50 text-primary shadow-cyan-100/0 border-cyan-100 border hover:bg-primary hover:text-white;
+    }
+}
