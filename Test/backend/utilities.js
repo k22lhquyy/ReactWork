@@ -7,6 +7,7 @@ function authenticateToken(req, res, next) {
 
     // Không có token, trả về trạng thái 401 (Unauthorized)
     if (!token) return res.sendStatus(401);
+    console.log("atilities.js");
 
     jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
         // Token không hợp lệ, trả về trạng thái 403 (Forbidden)

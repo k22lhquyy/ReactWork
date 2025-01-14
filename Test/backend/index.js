@@ -26,6 +26,7 @@ app.get('/hello', async (req, res) => {
 
 app.post('/create-account', async (req, res) => {
     const {fullname, email, password } = req.body;
+    console.log(fullname, email, password);
     if(!fullname || !email || !password){
         res.status(400).json({message: 'Please provide all the required fields'});
         return;
@@ -117,7 +118,7 @@ app.get("/get-user", authenticateToken,async (req, res) => {
 
     return res.json({
         user: isUser,
-        message: ""
+        message: "success"
     })
 })
 

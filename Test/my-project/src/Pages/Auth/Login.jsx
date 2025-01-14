@@ -26,7 +26,6 @@ const Login = () => {
     }
 
     setError(null);
-
     try {
       const response = await axiosInstance.post('/login', {email: email, password: password});
       if(response.data && response.data.acccesToken){
@@ -34,7 +33,7 @@ const Login = () => {
         navigator('/dashboard');
       }
     } catch (error) {
-      setError(error.response.data.message);
+      setError("errorr");
     }
   }
 
@@ -66,7 +65,7 @@ const Login = () => {
             <button type='submit' className='btn-primary'>Login</button>
             <p className='text-xs text-slate-500 text-center my-4'>Or</p>
             <button type='submit' className='btn-light btn-primary' onClick={() => {
-              navigator("/signup")
+              navigator("/register")
             }}> CREATE ACCOUNT</button>
           </form>
         </div>
